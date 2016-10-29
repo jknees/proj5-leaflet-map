@@ -11,5 +11,3 @@ def process(raw):
 		print(line)
 
 	return cooked
-
-print(process(open("poi.txt")))
