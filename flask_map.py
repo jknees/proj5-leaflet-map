@@ -8,7 +8,7 @@ import json
 import logging
 
 
-app = app.Flask(__name__)
+app = flask.Flask(__name__)
 import CONFIG
 
 @app.route("/")
