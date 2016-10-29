@@ -22,6 +22,7 @@ def index():
 
 if __name__ == "__main__":
     # Standalone. 
+    app.secret_key = CONFIG.secret_key
     app.debug = True
     app.logger.setLevel(logging.DEBUG)
     print("Opening for global access on port {}".format(CONFIG.PORT))
