@@ -8,6 +8,5 @@ def process(raw):
 		entry = {}
 		entry['name'], entry['lat'], entry['lon'] = line.split(',')
 		cooked.append(entry)
-		print(line)
 
 	return cooked
