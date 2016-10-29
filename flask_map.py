@@ -17,7 +17,7 @@ import CONFIG
 def index():
 	raw = open('poi.txt')
 	#flask.session['places'] = pre.process(raw)
-	return flask.rendertemplate('index.html')
+	return flask.render_template('index.html')
 
 
 if __name__ == "__main__":
