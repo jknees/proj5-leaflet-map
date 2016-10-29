@@ -12,6 +12,10 @@
 
 	<div id="mapid"></div>
 	<script type="text/javascript" src="../static/js/index.js"></script>
+	<script type="text/javascript">
+		{% for place in session.places %}
+			var {{place.name}} = L.marker([{{place.lat}}, {{place.lon}}]).addTo(mymap).bindPopup({{place.name}});
+	</script>
 
 
 
