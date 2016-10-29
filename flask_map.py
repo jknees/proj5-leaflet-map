@@ -16,7 +16,7 @@ import CONFIG
 @app.route("/index")
 def index():
 	raw = open('poi.txt')
-	flask.session['places'] = pre.process(raw)
+	#flask.session['places'] = pre.process(raw)
 	return flask.rendertemplate('index.html')
 
 
