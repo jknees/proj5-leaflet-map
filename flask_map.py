@@ -7,6 +7,7 @@ from flask import jsonify # For AJAX transactions
 import json
 import logging
 
+import pre
 
 app = flask.Flask(__name__)
 import CONFIG
