@@ -9,6 +9,8 @@ def test_location():
 	assert places[0]['name'] == 'Student Tennis Center'
 	print("lat = " + str(places[0]['lat']))
 	print("lon = " + str(places[0]['lon']))
+	print(type(places[0]['lat']))
+	print(type(places[0]['lon']))
 	assert places[0]['lat'] == '44.04157'
 	assert places[0]['lon'] == '-123.0732'
 
