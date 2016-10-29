@@ -30,7 +30,7 @@ env:
 #  with debugging turned on unless it is unset in CONFIG.py
 # 
 run:	env
-	($(INVENV) python3 secrets.py) ||  true
+	($(INVENV) python3 flask_map.py) ||  true
 
 # 'make service' runs as a background job under the gunicorn 
 #  WSGI server. FIXME:  A real production service would use 

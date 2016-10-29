@@ -28,5 +28,5 @@ function onMapClick(e) {
 
 mymap.on('click', onMapClick);
 
-{% for place in session.Places%}
+{% for place in session.places%}
 	var {{place.name}} = L.marker([{{place.lat}}, {{place.lon}}]).addTo(mymap).bindPopup({{place.name}});
